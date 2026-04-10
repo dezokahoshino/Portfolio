@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       PAGE TITLE
+       Change "RumDuol — CEO & Founder" to your own name/title
+       This appears on the browser tab
+  ═══════════════════════════════════════════ -->
+  <title>Saran Sotheasamrethikar</title>
+
+  <!-- Google Fonts — do not remove these links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./image/Untitled85_20251230120714.png">
+
+  <!-- Link to your CSS file — keep this path correct -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR — do not remove these divs
+  ═══════════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+       ─────────────────────────────────────────
+       • Logo: Change "Rum" and "Duol" text — the <span> part gets the gold accent color
+       • Nav links: Change the text and #anchor targets
+         #about / #projects / #skills / #contact must match the id="" of each section below
+       • "Let's Connect" button: Change text or change href="#contact" to a different link
+  ═══════════════════════════════════════════ -->
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">Rum<span>Duol</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Ventures</a></li>
+      <li><a href="#skills">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- ADD MORE NAV LINKS: copy the line above and change the href and text -->
+    </ul>
+
+    <a href="#contact" class="nav-cta">Let's Connect</a>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Overline text → "CEO & Founder · RumDuol Company"  (small label above name)
+       2. .hero-name    → Replace "Your" and "Name Here" with your actual name
+                          The <span class="gold"> part renders in amber-fire color
+       3. .hero-title   → Your subtitle / tagline
+       4. .hero-bio     → Short 2–3 sentence intro paragraph
+       5. Buttons       → Change button text and href targets
+       6. Portrait      → Replace .hero-portrait-placeholder with:
+                          <img src="your-photo.jpg" alt="Your Name" style="width:280px;height:360px;object-fit:cover;" />
+       7. Stats strip   → Change numbers and labels in .stat-item blocks
+                          To add a 4th stat: copy a .stat-item and change grid-template-columns
+                          in style.css #hero .hero-stats to repeat(4, 1fr)
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-texture"></div>
+
+    <div class="hero-left">
+
+      <!-- ① OVERLINE — small label above your name -->
+      <div class="hero-overline">
+        <div class="hero-overline-line"></div>
+        <span class="hero-overline-text">CEO &amp; Founder · RumDuol Company</span>
+      </div>
+
+      <!-- ② YOUR NAME — the <span class="gold"> gets amber-fire color -->
+      <h1 class="hero-name reveal">
+        Greetings,<br><span class="gold">I'm Saran Sotheasamrethikar <br> Dezoka Hoshino.</span>
+      </h1>
+
+      <!-- ③ SUBTITLE / TAGLINE -->
+      <p class="hero-title reveal reveal-delay-1">
+        Visionary Leader · Empire Builder · Creative Executive
+      </p>
+
+      <!-- ④ SHORT BIO PARAGRAPH -->
+      <p class="hero-bio reveal reveal-delay-2">
+        Founder and driving force behind RumDuol and a constellation of ventures spanning
+        Esports, Animation, Entertainment, and Education Centré. Building industries, not just companies.
+      </p>
+
+      <!-- ⑤ CALL-TO-ACTION BUTTONS — change text and href links -->
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#projects" class="btn-primary">Explore My Empire</a>
+        <a href="#about"    class="btn-ghost">My Story</a>
+      </div>
+
+    </div><!-- /hero-left -->
+
+    <div class="hero-right">
+      <div class="hero-right-bg"></div>
+      <div class="hero-right-ornament"></div>
+           
+          <div class="hero-portrait-placeholder">
+        <div class="portrait-frame">
+          <img src="image/Untitled85_20251230120714.png" alt="Rumduol Hoshino" class="portrait-img" />
+        </div>
+        <div class="portrait-frame">
+          <img src="image/Untitled85_20251230120605.png" alt="Rumduol Hoshino" class="portrait-img" />
+        </div>
+      </div>
+
+      <!-- ⑦ STATS STRIP — change numbers and labels -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Companies Founded</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Industries Led</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Vision Ahead</span>
+        </div>
+        <!-- ADD A STAT: copy one .stat-item above, then update style.css
+             .hero-stats { grid-template-columns: repeat(4, 1fr); } -->
+      </div>
+
+    </div><!-- /hero-right -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Monogram Seal — change "RD" initials inside the <text> SVG tag
+       2. Pull quote    — change the blockquote text
+       3. Bio paragraphs → 3 paragraphs; edit each freely
+          Replace [Your Name] with your actual name
+       4. Empire cards  → Each card has: emoji icon, company name, short description
+          To ADD a card: copy a .empire-card block and update content
+          To REMOVE a card: delete a .empire-card block
+          Note: If you have 3 or 5 cards, change .empire-grid grid-template-columns in style.css
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+
+        <div class="about-left reveal">
+
+          <!-- ① MONOGRAM SEAL — change "RD" to your initials (2 letters recommended) -->
+          <div class="seal-svg-wrap">
+            <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="80" cy="80" r="75" stroke="#D4A84B" stroke-width="1"/>
+              <circle cx="80" cy="80" r="64" stroke="#E8C97A" stroke-width="0.75"/>
+              <circle cx="80" cy="80" r="58" fill="#A87020" fill-opacity="0.12"/>
+              <g stroke="#C4922A" stroke-width="1">
+                <line x1="80" y1="5"   x2="80"  y2="14"/>
+                <line x1="80" y1="146" x2="80"  y2="155"/>
+                <line x1="5"  y1="80"  x2="14"  y2="80"/>
+                <line x1="146" y1="80" x2="155" y2="80"/>
+                <line x1="26.4" y1="26.4"   x2="32.8" y2="32.8"/>
+                <line x1="127.2" y1="127.2" x2="133.6" y2="133.6"/>
+                <line x1="133.6" y1="26.4"  x2="127.2" y2="32.8"/>
+                <line x1="32.8"  y1="127.2" x2="26.4"  y2="133.6"/>
+              </g>
+              <circle cx="80"  cy="8"   r="2.5" fill="#D4A84B"/>
+              <circle cx="80"  cy="152" r="2.5" fill="#D4A84B"/>
+              <circle cx="8"   cy="80"  r="2.5" fill="#D4A84B"/>
+              <circle cx="152" cy="80"  r="2.5" fill="#D4A84B"/>
+              <rect x="65" y="65" width="30" height="30" transform="rotate(45 80 80)" stroke="#D4A84B" stroke-width="0.75" fill="none"/>
+              <!-- CHANGE INITIALS HERE ↓ -->
+              <text x="80" y="88" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-style="italic" fill="#4A2C06" letter-spacing="-1">RD</text>
+            </svg>
+          </div>
+
+          <!-- ② PULL QUOTE — 1–2 memorable lines -->
+          <blockquote class="about-quote">
+            "I don't build companies.<br>I build ecosystems."
+          </blockquote>
+
+          <blockquote class="about-quote">
+            "Build with Love.<br>Build with Passion."
+          </blockquote>
+
+          <blockquote class="about-quote">
+            "Only as high as you reach, can you grow? <br>
+            Only as far as you seek, can you go? <br>
+            Only as deep as you look, can you see? <br>
+            Only as much as you can dream, can you be? <br>
+            Whatever you do, reach high, reach far, go deep, keep dreaming and keep doing what you want to be."
+          </blockquote>
+
+
+        </div><!-- /about-left -->
+
+        <div class="about-right reveal reveal-delay-1">
+          <span class="eyebrow">The Story</span>
+          <div class="rule"><div class="rule-line"></div><div class="rule-gem"></div></div>
+
+          <!-- ③ BIO PARAGRAPHS — edit freely, use <strong> to bold key phrases -->
+          <p>
+            My name is <strong>Sotheasamrethikar Saran/Dezoka Hoshino</strong> — CEO &amp; Founder of RumDuol Company,
+            a holding group of visionary ventures built to shape the future of entertainment,
+            education centré, and competitive culture across Southeast Asia and beyond.
+          </p>
+          <p>
+            What started as a single bold idea has evolved into a multi-industry empire.
+            Each company in my portfolio is a deliberate act of creation — built from the ground
+            up with purpose, precision, and an unwavering belief that
+            <strong>excellence is the only standard</strong>.
+          </p>
+          <p>
+            I lead with strategy, inspire with vision, and execute with relentless focus.
+            Whether forging new markets in Esports or redefining storytelling through Animation,
+            my mission is the same: <strong>build what doesn't yet exist.</strong>
+          </p>
+
+          <!-- ④ EMPIRE CARDS — copy/remove blocks to add or remove companies -->
+          <div class="empire-grid">
+
+            <div class="empire-card reveal reveal-delay-2">
+              <span class="empire-icon">🏆</span>           <!-- Change emoji -->
+              <span class="empire-name">RumDuol</span>      <!-- Company name -->
+              <span class="empire-desc">Parent Company · Flagship</span> <!-- Short description -->
+            </div>
+
+            <div class="empire-card reveal reveal-delay-3">
+              <span class="empire-icon">🎮</span>
+              <span class="empire-name">Esports</span>
+              <span class="empire-desc">Competitive Gaming · Events</span>
+            </div>
+
+            <div class="empire-card reveal reveal-delay-4">
+              <span class="empire-icon">🎬</span>
+              <span class="empire-name">Entertainment <br> Animation Studio</span>
+              <span class="empire-desc">Creative · Visual Storytelling</span>
+            </div>
+
+            <div class="empire-card reveal reveal-delay-5">
+              <span class="empire-icon">🎓</span>
+              <span class="empire-name">Education Centré</span>
+              <span class="empire-desc">Learning · Future Leaders</span>
+            </div>
+
+            <!-- ADD A COMPANY CARD:
+            <div class="empire-card">
+              <span class="empire-icon">🌐</span>
+              <span class="empire-name">New Venture</span>
+              <span class="empire-desc">Industry · Short Description</span>
+            </div>
+            -->
+
+          </div><!-- /empire-grid -->
+        </div><!-- /about-right -->
+
+      </div><!-- /about-grid -->
+    </div><!-- /section-inner -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS / VENTURES SECTION
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Section eyebrow  → "Selected Ventures"
+       2. Section headline → Change the h2 text
+       3. Section subtitle → The paragraph below the headline
+       4. Project cards    → Each card has:
+            - .project-bg  style="background:..." — change dark gradient colors
+            - .project-number → 01, 02, 03, 04...
+            - .project-cat    → Category label (e.g. "Flagship · Holding Group")
+            - .project-name   → Project/company name
+            - .project-desc   → 2–3 sentence description (visible on hover)
+            - .project-link   → href and link text
+
+       TO ADD A PROJECT CARD:
+         Copy one <div class="project-card">...</div> block.
+         Note: The first card spans 2 rows and the 4th spans 2 columns by default.
+         If you add a 5th card, update the CSS nth-child selectors in style.css.
+
+       TO REMOVE A PROJECT CARD:
+         Delete the entire <div class="project-card">...</div> block.
+  ═══════════════════════════════════════════ -->
+  <!-- ════════════════════════════════════════════════════════
+       VENTURES / PROJECTS SECTION
+       ─────────────────────────────────────────────────────────
+       This section contains the full project detail content.
+       — The category tabs stick below the main nav as you scroll
+       — Each category section has id="llc" / "esports" / "animation" / "entertainment" / "education"
+       — To add a new category: copy a full category-section block and add a matching cat-tab
+       — To edit projects within a category: find the matching .pd-card block
+  ════════════════════════════════════════════════════════ -->
+  <section id="projects" style="padding:0">
+<nav class="category-nav">
+    <div class="category-nav-inner">
+      <a href="#llc"           class="cat-tab active">
+        <span class="cat-tab-icon">🏢</span> LLC
+      </a>
+      <a href="#esports"       class="cat-tab">
+        <span class="cat-tab-icon">🎮</span> Esports
+      </a>
+      <a href="#animation"     class="cat-tab">
+        <span class="cat-tab-icon">🎬</span> Animation Studio
+      </a>
+      <a href="#entertainment" class="cat-tab">
+        <span class="cat-tab-icon">🎭</span> Entertainment
+      </a>
+      <a href="#educationcentré"     class="cat-tab">
+        <span class="cat-tab-icon">🎓</span> Education Centré
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║   CATEGORY 1 — RumDuol LLC / Holding     ║
+       ╚═══════════════════════════════════════════╝
+       HOW TO EDIT THIS CATEGORY:
+       — data-index="01" → the faint watermark number in the background
+       — id="llc" → must match the cat-tab href above
+       — .cat-badge-icon → emoji for the category badge
+       — .cat-title → category headline (<em> for gold color)
+       — .cat-overview → 2–3 sentence overview paragraph
+       — .cat-meta-pill blocks → founded year, status, location, etc.
+         TO ADD A META PILL: copy one .cat-meta-pill block
+       — .pd-grid → the project cards grid
+         — First .pd-card gets class="pd-card pd-featured" automatically
+         — TO ADD A PROJECT: copy a .pd-card block (see template at bottom)
+         — TO REMOVE A PROJECT: delete a .pd-card block
+       — .cat-closing → the quote strip at the bottom of the category
+  ═══════════════════════════════════════════ -->
+  <section class="category-section" id="llc" data-index="01">
+    <div class="cat-section-inner">
+
+      <!-- Category Header -->
+      <div class="cat-header reveal">
+        <div class="cat-identity">
+          <div class="cat-badge">
+            <span class="cat-badge-icon">🏢</span>   <!-- ← Change emoji -->
+            <span class="cat-badge-num">01</span>
+          </div>
+        </div>
+        <div class="cat-header-text">
+          <span class="eyebrow">Holding Company</span>
+          <!-- ① CATEGORY TITLE — wrap gold words in <em> -->
+          <h2 class="cat-title">RumDuol <em>Company</em> &amp; Parent Companies</h2>
+          <!-- ② OVERVIEW PARAGRAPH — describe the whole category -->
+          <p class="cat-overview">
+            RumDuol Company is the central holding entity that anchors, funds, and
+            strategically directs every venture in the portfolio. From corporate governance
+            to brand identity, the LLC ensures that every subsidiary operates at the highest
+            standard while sharing a unified mission: building Southeast Asian excellence
+            into a globally recognized force.
+          </p>
+          <!-- ③ META PILLS — founded year, status, HQ, etc. -->
+          <div class="cat-meta">
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Founded</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2022</span>   <!-- ← Change year -->
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Status</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Active</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Headquarters</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Okayama, Japan</span>  <!-- ← Change location -->
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Sub-Headquarters</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Singapore City, Singapore</span>  <!-- ← Change location -->
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">LLC Headquarters</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Phnom Penh, Cambodia</span>  <!-- ← Change location -->
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Subsidiaries</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">5+ Companies</span>
+            </div>
+            <!-- ADD META PILL:
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Your Label</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Your Value</span>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="pd-grid reveal reveal-delay-1">
+
+        <!-- ════ FEATURED PROJECT (always first, spans full width) ════
+             TO CHANGE: edit icon, tag, name, description, features, stats, link
+             .pd-status-dot classes: (no class) = green/active | class="planned" = gold | class="building" = amber
+        -->
+        <div class="pd-card pd-featured">
+          <div class="pd-featured-visual">
+            <!-- Replace the icon below with an <img> tag for a real image:
+                 <img src="images/rumduol-hq.jpg" alt="RumDuol HQ" class="pd-visual-img" />
+            -->
+            <span class="pd-visual-icon">🏆</span>
+          </div>
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Flagship · Holding Group</span>   <!-- ← Category tag -->
+              <div class="pd-status">
+                <div class="pd-status-dot"></div> Active   <!-- ← Status label -->
+              </div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Company — The Empire HQ</h3>   <!-- ← Project name -->
+            <p class="pd-card-desc">
+              The parent company and brand nucleus of the entire RumDuol portfolio.
+              RumDuol LLC was established to create a unified corporate identity that
+              could house multiple high-growth ventures under one strategic roof.
+              It handles cross-subsidiary strategy, investor relations, brand licensing,
+              and serves as the primary legal and financial entity for all operations.
+            </p>   <!-- ← Project description -->
+            <ul class="pd-features">
+              <li>Centralized strategic direction across all 5 subsidiary companies</li>
+              <li>Brand licensing and intellectual property management</li>
+              <li>Investor relations, fundraising rounds, and financial reporting</li>
+              <li>Cross-company talent development and leadership pipeline</li>
+              <!-- ADD FEATURE: <li>Your feature here</li> -->
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">5+</span>        <!-- ← Stat number -->
+                  <span class="pd-stat-lbl">Subsidiaries</span>  <!-- ← Stat label -->
+                </div>
+                <div class="pd-stat">
+                  <span class="pd-stat-num">2020</span>
+                  <span class="pd-stat-lbl">Est.</span>
+                </div>
+                <!-- ADD STAT: copy .pd-stat block above -->
+              </div>
+              <a href="#" class="pd-link">Company Profile →</a>   <!-- ← Change href to your URL -->
+            </div>
+          </div>
+        </div>
+
+        <!-- ════ REGULAR PROJECT CARD 2 ════ -->
+        <div class="pd-card reveal reveal-delay-2">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Corporate Strategy</span>
+              <div class="pd-status">
+                <div class="pd-status-dot"></div> Active
+              </div>
+            </div>
+            <h3 class="pd-card-name">Brand Architecture &amp; Identity System</h3>
+            <p class="pd-card-desc">
+              A comprehensive brand identity framework that governs how every RumDuol
+              subsidiary presents itself to the world — from visual systems and tone of
+              voice to naming conventions and market positioning strategies.
+            </p>
+            <ul class="pd-features">
+              <li>Master brand guidelines covering typography, color, and motion</li>
+              <li>Sub-brand identity systems for each company division</li>
+              <li>Brand governance process for new product launches</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">5</span>
+                  <span class="pd-stat-lbl">Brand Systems</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">View Identity →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ════ REGULAR PROJECT CARD 3 ════ -->
+        <div class="pd-card reveal reveal-delay-3">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Investments &amp; Growth</span>
+              <div class="pd-status">
+                <div class="pd-status-dot building"></div> In Progress
+              </div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Ventures Fund</h3>
+            <p class="pd-card-desc">
+              A dedicated investment arm focused on identifying, funding, and accelerating
+              early-stage companies in Southeast Asia's creative economy — particularly
+              those aligned with gaming, media, and digital education sectors.
+            </p>
+            <ul class="pd-features">
+              <li>Seed to Series A investments in creative-tech companies</li>
+              <li>Mentorship and operational support for portfolio companies</li>
+              <li>Co-investment network with regional and global partners</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">2026</span>
+                  <span class="pd-stat-lbl">Launch</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /pd-grid -->
+
+      <!-- Category Closing Quote — change text freely -->
+      <div class="cat-closing reveal">
+        <div class="cat-closing-gem"></div>
+        <p class="cat-closing-text">
+          "The holding company is the spine. Every venture is a muscle attached to it —
+          each one powerful alone, unstoppable together."
+        </p>
+      </div>
+
+    </div><!-- /cat-section-inner -->
+  </section>
+
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║   CATEGORY 2 — ESPORTS                   ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="category-section" id="esports" data-index="02">
+    <div class="cat-section-inner">
+
+      <div class="cat-header reveal">
+        <div class="cat-identity">
+          <div class="cat-badge">
+            <span class="cat-badge-icon">🎮</span>
+            <span class="cat-badge-num">02</span>
+          </div>
+        </div>
+        <div class="cat-header-text">
+          <span class="eyebrow">Competitive Gaming</span>
+          <h2 class="cat-title">RumDuol <em>Esports</em></h2>
+          <p class="cat-overview">
+            RumDuol Esports was built on one conviction: Southeast Asian players deserve
+            a world-class competitive platform built for them, not borrowed from elsewhere.
+            From team rosters and coaching infrastructure to live tournament production and
+            digital broadcast, this division is redefining what esports excellence looks
+            like in the region.
+          </p>
+          <div class="cat-meta">
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Founded</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2021</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Status</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Active</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Games</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Mobile &amp; PC</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Region</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">SEA &amp; Global</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-grid reveal reveal-delay-1">
+
+        <div class="pd-card pd-featured">
+          <div class="pd-featured-visual">
+            <span class="pd-visual-icon">⚔️</span>
+          </div>
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Professional Team</span>
+              <div class="pd-status"><div class="pd-status-dot"></div> Active</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Esports Team</h3>
+            <p class="pd-card-desc">
+              A professional competitive roster competing across Southeast Asia's
+              most prestigious esports tournaments. Built on a foundation of rigorous
+              talent scouting, structured coaching, and performance analytics, the
+              RumDuol Pro Team represents the highest level of competitive play in
+              the region with ambitions for international recognition.
+            </p>
+            <ul class="pd-features">
+              <li>Full-time professional roster with dedicated coaching staff</li>
+              <li>Performance analytics and VOD review program</li>
+              <li>Regional tournament circuit participation</li>
+              <li>Streaming content arm with regular broadcast schedule</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">50+</span>
+                  <span class="pd-stat-lbl">Players</span>
+                </div>
+                <div class="pd-stat">
+                  <span class="pd-stat-num">10+</span>
+                  <span class="pd-stat-lbl">Game Titles</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Meet The Team →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-2">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Tournament Operations</span>
+              <div class="pd-status"><div class="pd-status-dot"></div> Active</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Championship Series</h3>
+            <p class="pd-card-desc">
+              An original esports tournament circuit organized and produced by RumDuol,
+              designed to give emerging players a structured competitive ladder —
+              from grassroots open qualifiers up to a prestigious national final.
+            </p>
+            <ul class="pd-features">
+              <li>3-stage format: Open → Regional → National Finals</li>
+              <li>Live broadcast production with commentary and studio segments</li>
+              <li>Prize pool distribution across all stages</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">500+</span>
+                  <span class="pd-stat-lbl">Participants</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">View Tournament →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-3">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Community &amp; Academy</span>
+              <div class="pd-status"><div class="pd-status-dot building"></div> Building</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Esports Academy</h3>
+            <p class="pd-card-desc">
+              A structured training program bridging the gap between casual players
+              and professional aspirants. The Academy provides structured coaching,
+              mental performance training, and a direct pathway into the Pro Team roster.
+            </p>
+            <ul class="pd-features">
+              <li>Weekly training camps and scrimmage sessions</li>
+              <li>Mental performance and team communication coaching</li>
+              <li>Scouting pipeline directly into the Pro Team</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-closing reveal">
+        <div class="cat-closing-gem"></div>
+        <p class="cat-closing-text">
+          "We're not just building a team. We're building the infrastructure that
+          produces champions — for a decade, not a season."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║   CATEGORY 3 — ANIMATION STUDIO          ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="category-section" id="animation" data-index="03">
+    <div class="cat-section-inner">
+
+      <div class="cat-header reveal">
+        <div class="cat-identity">
+          <div class="cat-badge">
+            <span class="cat-badge-icon">🎬</span>
+            <span class="cat-badge-num">03</span>
+          </div>
+        </div>
+        <div class="cat-header-text">
+          <span class="eyebrow">Creative Studio</span>
+          <h2 class="cat-title">RumDuol <em>Animation</em> Studio</h2>
+          <p class="cat-overview">
+            The Animation Studio was born from a simple but powerful observation:
+            Southeast Asian stories deserve Southeast Asian animation. From original
+            IP development and 2D/3D production to co-productions with regional
+            broadcasters, the studio creates worlds, characters, and narratives that
+            reflect the culture, mythology, and imagination of the people who live here.
+          </p>
+          <div class="cat-meta">
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Founded</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2022</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Format</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2D · 3D · Motion</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Market</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">SEA · Global</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-grid reveal reveal-delay-1">
+
+        <div class="pd-card pd-featured">
+          <div class="pd-featured-visual">
+            <span class="pd-visual-icon">✨</span>
+          </div>
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Original IP · Series</span>
+              <div class="pd-status"><div class="pd-status-dot building"></div> In Production</div>
+            </div>
+            <h3 class="pd-card-name">Project: [UNKNOWN]</h3>
+            <p class="pd-card-desc">
+              An original animated series set in a richly imagined world drawn from
+              Southeast Asian mythology and contemporary culture. Developed entirely
+              in-house, this flagship IP represents the studio's most ambitious creative
+              undertaking — designed for regional broadcast and international streaming
+              platform distribution.
+            </p>
+            <ul class="pd-features">
+              <li>Stylized visual language</li>
+              <li>Original score and sound design by regional composers</li>
+              <li>Multilingual production: Khmer, English, Japanese and more </li>
+              <li>Merchandising and licensing rights retained in-house</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Project</span>
+                  <span class="pd-stat-lbl">Still in Production</span>
+                </div>
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-2">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Commercial Production</span>
+              <div class="pd-status"><div class="pd-status-dot"></div> Active</div>
+            </div>
+            <h3 class="pd-card-name">Animation Services &amp; Co-Productions</h3>
+            <p class="pd-card-desc">
+              The studio offers full-service animation production for brands, broadcasters,
+              and co-production partners — from concept and storyboard through to final
+              delivery. A revenue stream that funds original IP development.
+            </p>
+            <ul class="pd-features">
+              <li>Brand explainer and advertising animation</li>
+              <li>Co-production agreements with regional TV networks</li>
+              <li>2D 3D character animation for games and interactive media</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">10+</span>
+                  <span class="pd-stat-lbl">Clients</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Our Services →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-3">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Short Films &amp; Awards</span>
+              <div class="pd-status"><div class="pd-status-dot planned"></div> Planned</div>
+            </div>
+            <h3 class="pd-card-name">Short Film &amp; Festival Program</h3>
+            <p class="pd-card-desc">
+              A dedicated program for producing short-form animated films submitted to
+              international animation festivals — building the studio's global reputation
+              and creating a pipeline of directorial talent from within the region.
+            </p>
+            <ul class="pd-features">
+              <li>Annual slate of 3–5 short films per year</li>
+              <li>Submissions to SIGGRAPH, Annecy, and Asian festival circuits</li>
+              <li>Director development program for emerging animators</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-closing reveal">
+        <div class="cat-closing-gem"></div>
+        <p class="cat-closing-text">
+          "Every frame we create is a piece of culture — proof that our stories
+          are worth telling in the most beautiful medium ever invented."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║   CATEGORY 4 — ENTERTAINMENT             ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="category-section" id="entertainment" data-index="04">
+    <div class="cat-section-inner">
+
+      <div class="cat-header reveal">
+        <div class="cat-identity">
+          <div class="cat-badge">
+            <span class="cat-badge-icon">🎭</span>
+            <span class="cat-badge-num">04</span>
+          </div>
+        </div>
+        <div class="cat-header-text">
+          <span class="eyebrow">Media &amp; Live Events</span>
+          <h2 class="cat-title">RumDuol <em>Entertainment</em></h2>
+          <p class="cat-overview">
+            The Entertainment division is where culture, media, and live experience
+            intersect. From talent management and music production to live event
+            production and digital content networks, this arm of RumDuol is building
+            the infrastructure for Southeast Asia's next generation of creators,
+            performers, and cultural icons.
+          </p>
+          <div class="cat-meta">
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Founded</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2023</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Verticals</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Music · Events · Digital + Therical</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Status</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Growing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-grid reveal reveal-delay-1">
+
+        <div class="pd-card pd-featured">
+          <div class="pd-featured-visual">
+            <span class="pd-visual-icon">🎤</span>
+          </div>
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Talent &amp; Music</span>
+              <div class="pd-status"><div class="pd-status-dot"></div> Active</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Talent &amp; Music Label</h3>
+            <p class="pd-card-desc">
+              A talent management and independent music label supporting artists,
+              content creators, and performers across Cambodia and the wider Southeast
+              Asian market. The label provides full-spectrum support: artist development,
+              production, distribution, and brand partnership management — with a focus
+              on building sustainable long-term careers rather than short-term virality.
+            </p>
+            <ul class="pd-features">
+              <li>Artist development program from demo to debut release</li>
+              <li>Digital distribution to Spotify, Apple Music, YouTube, and regional platforms</li>
+              <li>Brand partnership management and endorsement deals</li>
+              <li>Studio recording facilities for signed and independent artists</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">8+</span>
+                  <span class="pd-stat-lbl">Artists</span>
+                </div>
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Our Artists →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-2">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Live Events</span>
+              <div class="pd-status"><div class="pd-status-dot building"></div> Building</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Live — Event Production</h3>
+            <p class="pd-card-desc">
+              A full-service live event production company handling concerts, festivals,
+              brand activations, and hybrid live-digital experiences. RumDuol Live brings
+              the same level of production value found in international events to the
+              Southeast Asian stage.
+            </p>
+            <ul class="pd-features">
+              <li>Concert and festival production end-to-end</li>
+              <li>Hybrid live-stream event infrastructure</li>
+              <li>Brand activation and experiential marketing events</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Get In Touch →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-3">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Digital Content</span>
+              <div class="pd-status"><div class="pd-status-dot"></div> In Production</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Digital Content Network</h3>
+            <p class="pd-card-desc">
+              A multi-channel digital content operation producing original video content,
+              podcasts, and editorial series for owned and partner platforms — reaching
+              the fast-growing digital-native audience across Cambodia and SEA.
+            </p>
+            <ul class="pd-features">
+              <li>YouTube channel network across gaming, culture, and business</li>
+              <li>Podcast series featuring regional founders and creators</li>
+              <li>Social-first short-form content for TikTok and Instagram</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Watch Now →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-closing reveal">
+        <div class="cat-closing-gem"></div>
+        <p class="cat-closing-text">
+          "Entertainment is culture in motion. We're not just making content —
+          we're building the stages that Southeast Asian voices deserve."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║   CATEGORY 5 — EDUCATION                 ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="category-section" id="educationcentré" data-index="05">
+    <div class="cat-section-inner">
+
+      <div class="cat-header reveal">
+        <div class="cat-identity">
+          <div class="cat-badge">
+            <span class="cat-badge-icon">🎓</span>
+            <span class="cat-badge-num">05</span>
+          </div>
+        </div>
+        <div class="cat-header-text">
+          <span class="eyebrow">Learning &amp; Leadership</span>
+          <h2 class="cat-title">RumDuol <em>Education Centré</em></h2>
+          <p class="cat-overview">
+            Education is the longest-term investment in any portfolio — and the most
+            important. RumDuol Education Centré exists to produce the next generation of
+            founders, leaders, and creative professionals in Southeast Asia. Through
+            structured programs, mentorship, and experiential learning, it bridges
+            the gap between academic knowledge and real-world execution.
+          </p>
+          <div class="cat-meta">
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Founded</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">2024</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Format</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Online · In-Person</span>
+            </div>
+            <div class="cat-meta-pill">
+              <span class="cat-meta-pill-label">Focus</span>
+              <span class="cat-meta-pill-dot"></span>
+              <span class="cat-meta-pill-value">Youth · Entrepreneurs · Knowledge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-grid reveal reveal-delay-1">
+
+        <div class="pd-card pd-featured">
+          <div class="pd-featured-visual">
+            <span class="pd-visual-icon">🌱</span>
+          </div>
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Flagship Program</span>
+              <div class="pd-status"><div class="pd-status-dot building"></div> Building</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Founder Academy</h3>
+            <p class="pd-card-desc">
+              A rigorous, immersive entrepreneurship program for Cambodia's most
+              ambitious young minds. The Founder Academy is not a classroom — it's
+              a proving ground. Participants work on real business challenges, receive
+              direct mentorship from experienced founders, and graduate with either a
+              funded venture or a direct pathway into one of the RumDuol portfolio companies.
+            </p>
+            <ul class="pd-features">
+              <li>12-week intensive cohort-based program (online + in-person residency)</li>
+              <li>Mentorship from RumDuol executives and regional business leaders</li>
+              <li>Demo Day with investor panel and pitch competition</li>
+              <li>Alumni network with direct access to RumDuol's partner ecosystem</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">Coming Soon</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+                <div class="pd-stat">
+                  <span class="pd-stat-num">In Production</span>
+                  <span class="pd-stat-lbl">Building</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Apply Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-2">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Youth Program</span>
+              <div class="pd-status"><div class="pd-status-dot planned"></div> Planned</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Youth Leadership Program</h3>
+            <p class="pd-card-desc">
+              A structured program for students aged 15–20 focused on developing
+              leadership, creative thinking, and digital skills — preparing the next
+              generation for careers at the intersection of technology, business, and culture.
+            </p>
+            <ul class="pd-features">
+              <li>Weekend workshops on entrepreneurship, public speaking, and design thinking</li>
+              <li>Mentorship matching with professionals across the RumDuol network</li>
+              <li>Annual Youth Summit bringing together students across Cambodia</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">In Production</span>
+                  <span class="pd-stat-lbl">Stay Tuned</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-card reveal reveal-delay-3">
+          <div class="pd-card-body">
+            <div class="pd-card-top">
+              <span class="pd-card-tag">Online Learning</span>
+              <div class="pd-status"><div class="pd-status-dot building"></div> Building</div>
+            </div>
+            <h3 class="pd-card-name">RumDuol Academy Online</h3>
+            <p class="pd-card-desc">
+              A digital learning platform delivering courses in business, creative industries,
+              esports management, and digital skills — accessible to anyone in Southeast Asia
+              with a phone and an ambition to learn.
+            </p>
+            <ul class="pd-features">
+              <li>Self-paced and cohort-based courses in Khmer and English</li>
+              <li>Courses taught by practitioners, not just academics</li>
+              <li>Certificate programs recognized by RumDuol hiring partners</li>
+            </ul>
+            <div class="pd-card-footer">
+              <div class="pd-stats">
+                <div class="pd-stat">
+                  <span class="pd-stat-num">2026</span>
+                  <span class="pd-stat-lbl">Beta Launch Soon</span>
+                </div>
+              </div>
+              <a href="#" class="pd-link">Join Waitlist →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-closing reveal">
+        <div class="cat-closing-gem"></div>
+        <p class="cat-closing-text">
+          "The most powerful company I will ever build is not a company at all —
+          it's the generation of leaders that comes after me."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BACK STRIP — Bottom CTA
+       Change heading text, <em> gold word, and button label/href
+  ═══════════════════════════════════════════ -->
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS / EXPERTISE SECTION
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Section title / intro paragraphs on the left
+       2. Each .skill-pillar contains:
+            - .pillar-name  → Skill name
+            - .pillar-pct   → Percentage displayed (e.g. "96%") — visual label only
+            - data-width="0.96" → Controls the bar fill (0.0 to 1.0 = 0% to 100%)
+              IMPORTANT: keep data-width and .pillar-pct in sync
+            - .pillar-tags  → Add/remove <span class="tag"> items
+
+       TO ADD A SKILL:
+         Copy one .skill-pillar block, change the name, percentage, data-width, and tags.
+
+       TO REMOVE A SKILL:
+         Delete the entire .skill-pillar block.
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="skills-layout">
+
+        <div class="skills-intro reveal">
+          <span class="eyebrow">Areas of Mastery</span>
+          <div class="rule"><div class="rule-line"></div><div class="rule-gem"></div></div>
+          <h2 style="font-family:var(--font-display);font-size:clamp(30px,3.5vw,44px);font-style:italic;font-weight:400;color:var(--mahogany);letter-spacing:-0.025em;line-height:1.15;margin-bottom:24px;">
+            The Craft Behind<br>Every Venture
+          </h2>
+          <!-- Edit these intro paragraphs -->
+          <p>
+            A decades of building companies from nothing have sharpened a diverse set of skills —
+            from high-level strategy to the fine art of creative direction.
+          </p>
+          <p>
+            Each discipline has been earned in the arena, not the classroom.
+          </p>
+
+          <div class="diamond-rule" style="margin:40px 0 0">
+            <div class="line" style="background:rgba(212,168,75,0.3)"></div>
+            <div class="gem"></div>
+            <div class="line" style="background:rgba(212,168,75,0.3)"></div>
+          </div>
+        </div>
+
+        <div class="skill-pillars reveal reveal-delay-1">
+
+          <!-- SKILL 1 — data-width must be 0.0 to 1.0 -->
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Strategic Leadership</span>
+              <span class="pillar-pct">96%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.96"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Vision</span>
+              <span class="tag">Execution</span>
+              <span class="tag">Decision Making</span>
+              <!-- ADD TAG: <span class="tag">New Tag</span> -->
+            </div>
+          </div>
+
+          <!-- SKILL 2 -->
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Business Development</span>
+              <span class="pillar-pct">94%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.94"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Ventures</span>
+              <span class="tag">Partnerships</span>
+              <span class="tag">Fundraising</span>
+            </div>
+          </div>
+
+          <!-- SKILL 3 -->
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Creative Direction</span>
+              <span class="pillar-pct">90%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.90"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Branding</span>
+              <span class="tag">Storytelling</span>
+              <span class="tag">Animation</span>
+            </div>
+          </div>
+
+          <!-- SKILL 4 -->
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Esports &amp; Gaming</span>
+              <span class="pillar-pct">88%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.88"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Tournament Ops</span>
+              <span class="tag">Team Building</span>
+              <span class="tag">Community</span>
+            </div>
+          </div>
+
+          <!-- SKILL 5 -->
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Education &amp; Mentorship</span>
+              <span class="pillar-pct">92%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.92"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Curriculum</span>
+              <span class="tag">Leadership Dev</span>
+              <span class="tag">Coaching</span>
+            </div>
+          </div>
+
+          <!-- ADD A SKILL — copy this block:
+          <div class="skill-pillar">
+            <div class="pillar-top">
+              <span class="pillar-name">Your Skill Name</span>
+              <span class="pillar-pct">85%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.85"></div></div>
+            <div class="pillar-tags">
+              <span class="tag">Tag One</span>
+              <span class="tag">Tag Two</span>
+            </div>
+          </div>
+          -->
+
+        </div><!-- /skill-pillars -->
+      </div><!-- /skills-layout -->
+    </div><!-- /section-inner -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Heading and description paragraph
+       2. Contact channels:
+            - href="mailto:..."   → your actual email address
+            - .channel-val text   → displayed email / URL / handle
+            - .channel-type text  → label (Email, LinkedIn, etc.)
+            - .channel-icon emoji → change the emoji icon
+          TO ADD A CHANNEL: copy a full <a class="channel">...</a> block
+          TO REMOVE: delete the block
+
+       3. Contact form:
+            - Form field labels and placeholders → edit freely
+            - <select> options → add/remove <option> lines
+            - TO ADD A FIELD: copy a .form-field block
+            - TO REMOVE A FIELD: delete the block
+            - The .form-row class puts two fields side by side
+
+       NOTE: The form does not send email by default (static HTML).
+       To make it functional, connect it to a service like Formspree:
+         <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+         Then remove onsubmit="return false"
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <div class="contact-left reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <div class="rule"><div class="rule-line"></div><div class="rule-gem"></div></div>
+
+          <!-- ① CONTACT HEADING -->
+          <h2>Let's Build<br>Something<br><em>Extraordinary.</em></h2>
+
+          <!-- ② CONTACT DESCRIPTION -->
+          <p>Whether it's a partnership, investment conversation, speaking engagement,
+          or just a bold idea — my door is open to visionaries.</p>
+
+          <!-- ③ CONTACT CHANNELS -->
+          <div class="contact-channels">
+
+            <a href="mailto:dezokahoshinoinforumduol@gmail.com" class="channel">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#D4A84B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-type">Email</span>
+                <span class="channel-val">dezokahoshinoinforumduol@gmail.com</span>
+              </div>
+              <span class="channel-arr">→</span>
+            </a>
+
+            <a href="https://t.me/dezokahoshino_rumduol" class="channel">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A84B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.26l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.299z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-type">Telegram</span>
+                  <span class="channel-val">@dezokahoshino_rumduol</span>
+              </div>
+              <span class="channel-arr">→</span>
+            </a>
+
+            <a href="https://tiktok.com/@dezokahoshino" class="channel">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#D4A84B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-type">TikTok</span>
+                <span class="channel-val">@dezokahoshino</span>
+              </div>
+              <span class="channel-arr">→</span>
+            </a>
+
+            <a href="" class="channel">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#D4A84B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-type">Company</span>
+                <span class="channel-val">Coming Soon</span>
+              </div>
+              <span class="channel-arr">→</span>
+            </a>
+            <!-- ADD A CHANNEL — copy this block:
+            <a href="#" class="channel">
+              <div class="channel-icon">📱</div>
+              <div class="channel-info">
+                <span class="channel-type">Instagram</span>
+                <span class="channel-val">@yourhandle</span>
+              </div>
+              <span class="channel-arr">→</span>
+            </a>
+            -->
+
+          </div><!-- /contact-channels -->
+        </div><!-- /contact-left -->
+
+        <!-- ④ CONTACT FORM -->
+        <div class="reveal reveal-delay-1">
+          <form class="contact-form" onsubmit="return false">
+            <!-- To make form live with Formspree:
+                 <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> -->
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">Full Name</label>
+                <input type="text" id="f-name" name="name" placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label for="f-company">Company</label>
+                <input type="text" id="f-company" name="company" placeholder="Your company" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-field">
+              <label for="f-subject">Subject</label>
+              <select id="f-subject" name="subject">
+                <option value="">Select an inquiry type</option>
+                <option>Partnership Proposal</option>
+                <option>Investment Conversation</option>
+                <option>Speaking Engagement</option>
+                <option>Media &amp; Press</option>
+                <option>General Inquiry</option>
+                <!-- ADD OPTION: <option>Your New Option</option> -->
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="f-message">Your Message</label>
+              <textarea id="f-message" name="message" placeholder="Tell me about your vision..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message ›</button>
+
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div><!-- /section-inner -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ─────────────────────────────────────────
+       WHAT TO CHANGE:
+       1. Brand name — "Rum" + <span>Duol</span>
+       2. Brand description paragraph
+       3. Navigation links — match your section IDs
+       4. Companies column — list your actual company names and URLs
+       5. Copyright year and name
+       6. "Built with Vision" tagline — change to anything you like
+       TO ADD A FOOTER COLUMN:
+         Copy one <div>...</div> block, update title + links,
+         then change .footer-top grid-template-columns in style.css to add 1fr
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand column -->
+        <div>
+          <div class="footer-brand-name">Rum<span>Duol</span></div>  <!-- ← Change brand name -->
+          <div class="footer-brand-name">Sotheasamrethikar <span>Saran</span></div>  <!-- ← Change brand name -->
+          <div class="footer-brand-name">Dezoka <span>Hoshino</span></div>  <!-- ← Change brand name -->
+
+          <p class="footer-brand-desc">
+            CEO &amp; Founder of RumDuol Company and a constellation of ventures in
+            Esports, Animation, Entertainment, and Education Centré.
+          </p>
+        </div>
+
+        <!-- Navigation column -->
+        <div>
+          <span class="footer-col-head">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Ventures</a></li>
+            <li><a href="#skills">Expertise</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Companies column -->
+        <div>
+          <span class="footer-col-head">Companies</span>
+          <ul class="footer-links">
+            <li><a href="#llc">RumDuol LLC</a></li>
+            <li><a href="#esports">RumDuol Esports</a></li>
+            <li><a href="#animation">RumDuol Animation Studio</a></li>
+            <li><a href="#entertainment">RumDuol Entertainment</a></li>
+            <li><a href="#educationcentré">RumDuol Education Centré</a></li>
+            <!-- ADD: <li><a href="https://...">New Company</a></li> -->
+          </ul>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 RumDuol Company. All rights reserved.</span>  <!-- ← Change year/name -->
+        <div class="footer-badge">
+          <div class="footer-gem"></div>
+          Built with Vision - Built with Love<!-- ← Change tagline -->
+          <div class="footer-gem"></div>
+        </div>
+      </div>
+
+    </div><!-- /footer-inner -->
+  </footer>
+
+
+  <!-- Link to script.js — handles cursor, nav scroll, reveal animations, skill bars -->
+  <script src="script.js"></script>
+
+  <!-- Category tab active highlight — updates as you scroll through venture sections -->
+  <script>
+    (function() {
+      const catSections = document.querySelectorAll('.category-section');
+      const catTabs     = document.querySelectorAll('.cat-tab');
+      if (!catSections.length || !catTabs.length) return;
+
+      const tabObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            catTabs.forEach(t => t.classList.remove('active'));
+            const active = document.querySelectordocument.querySelector(".cat-tab[href='#" + entry.target.id + "']")
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+
+      catSections.forEach(s => tabObs.observe(s));
+    })();
+  </script>
+
+</body>
+</html>
